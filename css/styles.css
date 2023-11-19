@@ -16,19 +16,16 @@ h4,
 h5,
 h6,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
-    color: inherit;
 }
 
 ul,
 ol {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     padding-left: 0;
     list-style-type: none;
 }
@@ -66,8 +63,8 @@ h2 {
 
 .container {
     margin: 0 auto;
-    padding: 0 15px;
-    width: 1158px;
+    padding: 0 16px;
+    max-width: 320px;
 }
 
 .container-header {
@@ -76,6 +73,7 @@ h2 {
     gap: 40px;
     justify-content: space-between;
     align-items: center;
+    padding: 16px;
 }
 
 .nav-header {
@@ -102,13 +100,13 @@ h2 {
 
 
 .logo {
-    color: var(--IRIS, #4D5AE5);
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.54px;
+    color: #4d5ae5;
     text-transform: uppercase;
     text-decoration: none;
     margin-right: 76px;
@@ -130,7 +128,8 @@ h2 {
     list-style-type: none;
     margin: 0;
     padding-left: 0;
-    display: flex;
+    display: none;
+    position: relative;
     gap: 40px;
     /*для визначення відступів між пунктами меню*/
 }
@@ -152,8 +151,11 @@ h2 {
 }
 
 .nav-link {
-    line-height: 1.5;
+    line-height: 150%;
+    font-weight: 500;
     color: #2e2f42;
+    font-size: 16px;
+    letter-spacing: 0.32px;
     text-decoration: none;
     margin: 0;
     display: block;
@@ -163,13 +165,8 @@ h2 {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link a:hover {
-    color: #404bbf;
-}
-
-.nav-link a:focus {
-    color: #404bbf;
-}
+.nav-link a:hover {color: #404bbf;}
+.nav-link a:focus {color: #404bbf;}
 
 .nav-studio {
     color: #404bbf;
@@ -202,7 +199,7 @@ h2 {
 
 .address {
     font-style: normal;
-    display: flex;
+    display: none;
     /*для розташування контактів по горизонталі*/
     gap: 40px;
     /*для визначення відступів між пунктами контактів*/
@@ -218,8 +215,11 @@ h2 {
 
 .kontakt {
     font-style: normal;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.32px;
     color: #434455;
     text-decoration: none;
 }
@@ -237,11 +237,19 @@ h2 {
 }
 
 
+.menu-button {margin-left: auto;
+display: block;
+background: none;
+border: none;}
+
 /*section 1*/
 .section-effective {
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-color: #2e2f42;
     margin-left: auto;
     margin-right: auto;
+    margin: 0 auto;
     padding: 188px 0;
     /*для визначення відступів всередині секції*/
     justify-content: center;
@@ -257,17 +265,17 @@ h2 {
 
 
 .h-effective {
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 111.111%;
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.72px;
     color: #ffffff;
-    margin: 0;
+    margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     padding: 0;
-    max-width: 496px;
+    max-width: 170px;
     height: 120px;
 }
 
@@ -276,8 +284,8 @@ h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+    line-height: 150%;
+    letter-spacing: 0.64px;
     color: #ffffff;
     display: block;
     min-width: 169px;
@@ -289,8 +297,10 @@ h2 {
     /*для визначення заокруглень у кнопки*/
     margin: 0 auto;
     /* Центрування горизонтально */
+    padding: 16px 32px;
     text-align: center;
     cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover {
@@ -334,7 +344,8 @@ h2 {
     padding-left: 0;
     margin: 0;
     display: flex;
-    gap: 24px;
+    gap: 72px;
+    flex-wrap: wrap;
 }
 
 
@@ -358,30 +369,36 @@ h2 {
     border: 1px solid var(--LIGHT-SLATE, #8E8F99);
     background: var(--CLOUD, #F4F4FD);
     flex-shrink: 0;
+    position: relative;
+    max-width: 264px;
+    display: none;
 }
 
 
 
 .h-aboutus {
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    font-size: 36px;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
     color: #2e2f42;
     margin: 0;
     text-indent: 0%;
+    text-align: center;
+    text-transform: capitalize;
     margin-bottom: 8px;
     /*для визначення відступу між заголовком і параграфом*/
 }
 
 .p-aboutus {
-    line-height: 1.5;
+    line-height: 150%;
     font-size: 16px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
     color: #434455;
     margin: 0;
     padding: 0;
     text-indent: 0%;
+    font-weight: 500;
 }
 
 /*section 3*/
@@ -392,14 +409,19 @@ h2 {
 
 .h-ourteam {
     font-family: "Roboto";
-    line-height: 1.11;
-    letter-spacing: 0.02em;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
     color: #2e2f42;
     margin-bottom: 72px;
+    font-size: 36px;
+    text-transform: capitalize;
+    text-align: center;
+
 }
 
 
 .ul-ourteam {
+    justify-content: baseline;
     padding-left: 0;
     /*для визначення відступів між заголовком та параграфом*/
     display: flex;
@@ -441,8 +463,8 @@ img {
 .h-people {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    line-height: 120%;
+    letter-spacing: 0.4px;
     color: #2e2f42;
     margin: 0;
     text-align: center;
@@ -452,6 +474,9 @@ img {
 .p-people {
     font-size: 16px;
     text-align: center;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    margin-bottom: 8px;
 }
 
 .ul-ellipse {
@@ -478,8 +503,8 @@ img {
 
 .link-ellipse {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     background-color: #4d5ae5;
     /*колір фону елемента*/
     border-radius: 50%;
@@ -517,8 +542,8 @@ img {
     font-family: "Roboto";
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
     color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
@@ -574,9 +599,9 @@ img {
     /*для зміщення елемента до верхньої межі контейнера*/
     font-size: 16px;
     /*для визначення розміру шрифту*/
-    line-height: 1.5;
+    line-height: 150%;
     /* для визначення простору між рядками*/
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
     /*для визначення відстані між літерами*/
     color: #f4f4fd;
     padding: 40px 32px;
@@ -594,8 +619,8 @@ img {
 .h-portfolio {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    line-height: 120%;
+    letter-spacing: 0.4px;
     color: #2e2f42;
     margin: 0;
     padding: 0;
@@ -605,8 +630,8 @@ img {
 
 .p-portfolio {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    line-height: 150%;
+    letter-spacing: 0.32px;
     color: #434455;
     margin: 0;
     padding: 0;
@@ -638,10 +663,13 @@ img {
 .div-footer {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .logo-p-footer {
     margin-right: 120px;
+    flex-wrap: wrap;
 }
 
 .logo-footer {
@@ -651,9 +679,10 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: #4d5ae5;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     /*для додавання посиланню блочних властивостей*/
     margin-bottom: 16px;
     /*для визначення відступу між посиланням та параграфом*/
@@ -661,20 +690,21 @@ img {
 
 .logo-studio-footer {
     color: #f4f4fd;
-    display: inline-block;
+
 
 }
 
 .footer-paragraph {
     color: #F4F4FD;
     height: 72px;
-    max-width: 264px;
+    max-width: 288px;
     /*для визначення максимально допустимої ширини тексту*/
-    /*font-size: 16px;
+    font-size: 16px;
     font-weight: 400;
     text-align: left;
     font-family: "Roboto";
-    text-align: left;*/
+    line-height: 150%;
+    letter-spacing: 0.32px;
 }
 
 .div-content-socialmedia {
@@ -697,6 +727,7 @@ img {
     font-style: normal;
     align-items: flex-start;
     letter-spacing: 0.32px;
+    text-align: center;
 }
 
 p {
@@ -728,7 +759,8 @@ ul-sozial {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    position: relative;
+    flex-shrink: 0;
 }
 
 .href-sozial:hover {
@@ -757,14 +789,17 @@ ul-sozial {
     /*для визначення відстані між літерами*/
     color: #ffffff;
     /*кольору тексту*/
+    text-align: center;
 }
 
 .subscribe {
     display: flex;
     /*для розміщення елементів форми по горизонталі в рядок*/
-    gap: 24px;
+    gap: 16px;
     /*для визначення відступів між елементами форми*/
     align-items: baseline;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .label-subscribe {
@@ -774,7 +809,7 @@ ul-sozial {
 }
 
 .inputmail {
-    width: 264px;
+    width: 288px;
     height: 40px;
     font-size: 12px;
     font-weight: 400;
@@ -784,7 +819,7 @@ ul-sozial {
     padding-left: 16px;
     border-radius: 4px;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     outline: transparent;
     outline-offset: 5px;
@@ -798,6 +833,7 @@ ul-sozial {
     line-height: 2;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    opacity: 0.6;
 }
 
 .inputmail:focus {
@@ -815,8 +851,9 @@ ul-sozial {
     /*вирівнювання контенту по горизонталі*/
     align-items: center;
     /*для вирівнювання контенту по вертикалі*/
-
+    font-family: Roboto, sant-serif;
     font-size: 16px;
+    margin: 0 auto;
     font-weight: 500;
     /*для визначення жирності шрифта*/
     line-height: 1.5;
@@ -925,7 +962,9 @@ input ::placeholder-shown {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
     background-color: #e7e9fc;
+    border: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     line-height: 0;
@@ -933,16 +972,17 @@ input ::placeholder-shown {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.div-button:hover {
+.button-open:hover {
     background-color: #404bbf;
     border: none;
 }
 
-.div-button:focus {
+.button-open:focus {
     background-color: #404bbf;
     border: none;
 }
-
+.button-open:focus .div-modal,
+.button-open:hover .div-modal {fill: #ffffff;}
 .div-modal {
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1120,7 +1160,6 @@ input ::placeholder-shown {
     align-items: center;
     justify-content: center;
     fill: transparent;
-    background-color: #404bbf;
     outline: 1px solid #404bbf;
     margin-right: 8px;
 }
