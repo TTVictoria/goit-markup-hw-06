@@ -19,7 +19,7 @@
 
 <body>
     <header class="header-class">
-        <div class="container container-two">
+        <div class="container container-header">
             <nav class="nav-header">
                 <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span></a>
                 <ul class="page-nav">
@@ -44,6 +44,13 @@
                     </li>
                 </ul>
             </address>
+
+            <button type="button" class="menu-button">
+                <svg wigth="24"
+                height="24">
+                <use href="./images/icons all.svg#menu-burger"></use>
+            </svg>
+            </button>
         </div>
     </header>
 
@@ -110,7 +117,13 @@
                 <ul class="ul-ourteam">
                     <li class="li-productdesigner">
 
-                        <img class="img" src="./images/img1.jpg" alt="Mark Guerrero" width="264" height="260" />
+                        <img class="img" 
+                        src="./images/img1.jpg" 
+                        srcset="./images/img1.jpg 1x"
+                        srcset="./images/employee1@2x.jpeg 2x"
+                        alt="Mark Guerrero" 
+                        width="264" 
+                        height="260" />
                         <div class="image-container">
                             <h3 class="h-people">Mark Guerrero</h3>
                             <p class="p-people">Product Designer</p>
@@ -149,7 +162,12 @@
                     </li>
                     <li class="li-productdesigner">
 
-                        <img src="./images/img2.jpg" alt="Tom Ford" width="264" height="260" />
+                        <img src="./images/img2.jpg" 
+                        srcset="./images/img2.jpg 1x"
+                        srcset="./images/employee2@2x.jpeg 2x"
+                        alt="Tom Ford" 
+                        width="264" 
+                        height="260" />
                         <div class="image-container">
                             <h3 class="h-people">Tom Ford</h3>
                             <p class="p-people">Frontend Developer</p>
@@ -187,7 +205,12 @@
                     </li>
                     <li class="li-productdesigner">
 
-                        <img src="./images/img3.jpg" alt="Camila Garcia" width="264" height="260" />
+                        <img src="./images/img3.jpg" 
+                        srcset="./images/img3.jpg 1x"
+                        srcset="./images/employee3@2x.jpeg 2x"
+                        alt="Camila Garcia" 
+                        width="264" 
+                        height="260" />
                         <div class="image-container">
                             <h3 class="h-people">Camila Garcia</h3>
                             <p class="p-people">Marketing</p>
@@ -225,7 +248,12 @@
                     </li>
                     <li class="li-productdesigner">
 
-                        <img src="./images/img4.jpg" alt="Daniel Wilson" width="264" height="260" />
+                        <img src="./images/img4.jpg" 
+                        srcset="./images/img4.jpg 1x"
+                        srcset="./images/employee4@2x.jpeg"
+                        alt="Daniel Wilson" 
+                        width="264" 
+                        height="260" />
                         <div class="image-container">
                             <h3 class="h-people">Daniel Wilson</h3>
                             <p class="p-people">UI Designer</p>
@@ -272,7 +300,30 @@
                     <li class="li-portfolio">
 
                         <div class="img-portfolio">
-                            <img class="img" src="./images/img2-5.jpg" alt="Banking App" width="360" height="300" />
+                            <picture>
+
+                                <source
+                                srcset="./images/banking-app.jpg 1x" 
+                                srcset="./images/banking-app@2x.jpg 2x"
+                                media="(min-width: 1158px)" />
+                                
+                                <source
+                                srcset="./images/banking-app-tab.jpg 1x"
+                                srcset="./images/banking-app-tab@2x.jpg 2x"
+                                media="(min-width: 768px)"/>
+                                
+                                <source 
+                                srcset="./images/banking-app-mob.jpg 1x" 
+                                srcset="./images/banking-app-mob@2x.jpg 2x" 
+                                media="(min-width: 767px)" />
+                                
+                                <img class="img" 
+                                src="./images/img2-5.jpg" 
+                                alt="Banking App" 
+                                width="360"
+                                height="300" />
+                            </picture>
+
                             <p class="p-img-portfolio">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
@@ -286,8 +337,25 @@
                     <li class="li-portfolio">
 
                         <div class="img-portfolio">
+                            <picture>
+                            
+                                <source srcset="./images/cashless-payment.jpg 1x" 
+                                srcset="./images/cashless-payment@2x.jpg 2x" 
+                                media="(min-width: 1158px)" />
+                            
+                                <source srcset="./images/cashless-payment-tab.jpg 1x" 
+                                srcset="./images/cashless-payment-tab@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/cashless-payment-mob.jpg 1x" 
+                                srcset="./images/banking-app-mob@2x.jpg 2x"
+                                media="(min-width: 767px)" />
+
+
                             <img class="img" src="./images/img2-6.jpg" alt="Cashless Payment" width="360"
                                 height="300" />
+                            </picture>
+
                             <p class="p-img-portfolio">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
@@ -299,10 +367,28 @@
                             <p class="p-portfolio">Marketing</p>
                         </div>
                     </li>
-                    <li class="li-portfolio">
 
+                    <li class="li-portfolio">
                         <div class="img-portfolio">
-                            <img class="img" src="./images/img2-7.jpg" alt="Meditation App" width="360" height="300" />
+                            <picture>
+                            
+                                <source srcset="./images/banking-app.jpg 1x" 
+                                srcset="./images/banking-app@2x.jpg 2x" 
+                                media="(min-width: 1158px)" />
+                            
+                                <source srcset="./images/banking-app-tab.jpg" 
+                                srcset="./images/banking-app-tab@2x.jpg 2x"
+                                media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/banking-app-mob.jpg 1x" 
+                                srcset="./images/banking-app-mob@2x.jpg 2x"
+                                media="(min-width: 767px)" />
+
+                                <img class="img" 
+                                src="./images/img2-7.jpg" 
+                                alt="Meditation App" width="360" height="300" />
+                            </picture>
+                            
                             <p class="p-img-portfolio">14 Stylish and User-Friendly App Design Concepts · Task Manager
                                 App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
@@ -417,7 +503,11 @@
 
                     <label class="label-subscribe" for="email">
 
-                        <input type="email" name="email-address" placeholder="E-mail" class="inputmail" id="email" />
+                        <input type="email" 
+                        name="email-address" 
+                        placeholder="E-mail" 
+                        class="inputmail" 
+                        id="email" />
 
                     </label>
 
