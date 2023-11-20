@@ -238,10 +238,118 @@ h2 {
 }
 
 
-.menu-button {margin-left: auto;
-display: block;
-background: none;
-border: none;}
+.menu-button {display: block;
+    margin-left: auto;
+    padding: 0;
+    line-height: 0;
+    background: none;
+    border: none;}
+
+
+/*mobile menu*/
+.is-open .menu-mob{
+    opacity: 1;
+    display: block;
+    pointer-events: auto;
+}
+.menu-mob {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 72px 24px 40px 16px;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.menu-button-close {
+    display: block;
+    padding: 0;
+    line-height: 0;
+    background: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border: solid 1px rgba(46, 47, 66, 0.10);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.mob-icon-close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mob-navmenu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+}
+
+.mob-navlink {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+.nav-mobstudio {
+    color: #404BBF;
+}
+
+.mob-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.mob-linkcontact {
+    color: #434455;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.4px;
+}
+
+.tel {
+    color: #4D5AE5;
+}
+
+.mob-ul-social {
+    display: flex;
+    gap: 40px;
+}
+
+.mob-li-social {
+    width: 40px;
+    height: 40px;
+}
+
+.mob-link-social {
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mob-svg-icon {
+    fill: #f4f4fd;
+}
+/*end mobile menu*/
 
 /*section 1*/
 .section-effective {
@@ -936,11 +1044,7 @@ input ::placeholder-shown {
     visibility: visible;
     pointer-events: auto;
 }
-.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
+
 /*модальне вікно*/
 .block {
     position: absolute;

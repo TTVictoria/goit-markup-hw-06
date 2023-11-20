@@ -14,7 +14,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Effective Solution for Your Business</title>
 </head>
 
 <body> 
@@ -24,11 +23,11 @@
                 <a class="logo" href="./index.html">Web<span class="logo-studio">Studio</span></a>
                 <ul class="page-nav">
                     <!--Menu-->
-                    <li><a href="./index.html" class="nav-link nav-studio">Studio</a>
+                    <li><a href="./index.html" class="nav-link nav-studio is-open">Studio</a>
                     </li>
-                    <li><a href="" class="nav-link">Portfolio</a>
+                    <li><a href="" class="nav-link is-open">Portfolio</a>
                     </li>
-                    <li><a href="" class="nav-link">Contacts</a>
+                    <li><a href="" class="nav-link is-open">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -44,13 +43,73 @@
                     </li>
                 </ul>
             </address>
+<!--menu mobile-->
 
             <button type="button" class="menu-button">
                 <svg width="24"
-                height="24">
+                height="24"
+                class="icon-mob">
                 <use href="./images/icons all.svg#menu-burger"></use>
             </svg>
             </button>
+
+        <div class="menu-mob">
+            <button type="button" class="menu-button-close">
+                <svg width="8" height="8" class="mob-icon-close">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+
+                <ul class="mob-navmenu">
+                    <li>
+                        <a href="./index.html" class="mob-navlink nav-mobstudio">Studio</a>
+                    </li>
+                    <li><a href="" class="mob-navlink">Portfolio</a></li>
+                    <li><a href="" class="mob-navlink">Contacts</a></li>
+                </ul>
+                <ul class="mob-contact">
+                    <li>
+                        <a href="tel:+110001111111" class="mob-linkcontact tel">+11 (000) 111-11-11</a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="mob-contact">info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="mob-ul-social">
+                    <li class="mob-li-social">
+                        <a href="" class="mob-link-social">
+                            <svg class="mob-svg-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-li-social">
+                        <a href="" class="mob-link-social">
+                            <svg class="mob-svg-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-li-social">
+                        <a href="" class="mob-link-social">
+                            <svg class="mob-svg-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-li-social">
+                        <a href="" class="mob-link-social">
+                            <svg class="mob-svg-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+
+<!-- end menu mobile -->
+
         </div>
     </header>
 
