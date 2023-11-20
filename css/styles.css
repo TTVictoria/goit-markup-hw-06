@@ -936,7 +936,11 @@ input ::placeholder-shown {
     visibility: visible;
     pointer-events: auto;
 }
-
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 /*модальне вікно*/
 .block {
     position: absolute;
