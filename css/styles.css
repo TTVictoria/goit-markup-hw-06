@@ -262,9 +262,9 @@ h2 {
     left: 0;
     z-index: 999;
     padding: 72px 24px 40px 16px;
-    visibility: hidden;
+
     pointer-events: none;
-    opacity: 0;
+    
 }
 
 .menu-button-close {
