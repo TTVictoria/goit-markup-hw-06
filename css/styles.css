@@ -63,8 +63,9 @@ h2 {
 
 .container {
     margin: 0 auto;
-    padding: 0 16px;
     max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .container-header {
@@ -514,7 +515,7 @@ h2 {
 .ourteam {
     background-color: #F4F4FD;
     padding: 120px 0 120px;
-    display: none;
+    /*display: none;*/
 }
 
 .h-ourteam {
@@ -532,11 +533,14 @@ h2 {
 
 .ul-ourteam {
     justify-content: baseline;
+    flex-wrap: wrap;
+    margin: 0;
     padding-left: 0;
     /*для визначення відступів між заголовком та параграфом*/
     display: flex;
     /*для розміщення елементів списку по горизонталі в рядок*/
-    gap: 24px;
+    /*gap:24px;*/
+    gap: 16px;
     /*для визначення розмірів відступів між елементами списку*/
 }
 
@@ -600,8 +604,11 @@ img {
 }
 
 .li-ellipse {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
+
+    /*width: 40px;
+    height: 40px;*/
 
 }
 
@@ -612,8 +619,7 @@ img {
 
 .link-ellipse {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 100%;
-    height: 100%;
+    
     background-color: #4d5ae5;
     /*колір фону елемента*/
     border-radius: 50%;
@@ -624,6 +630,10 @@ img {
     /*вирівнювання іконки по вертикалі*/
     justify-content: center;
     /*вирівнювання іконки по горизонталі*/
+    width: 100%;
+    height: 100%;
+
+       
 }
 
 .link-ellipse:hover {
@@ -637,6 +647,10 @@ img {
 .icon-ellipse {
     fill: #f4f4fd;
     /*для визначення кольору іконки*/
+
+    /*for test*/
+    width: 16px;
+    height: 16px;
 }
 
 /*section 4*/
@@ -644,7 +658,7 @@ img {
     padding-top: 120px;
     padding-bottom: 120px;
     /*для визначення відступів всередині секції*/
-    display: none;
+    /*display: none;*/
 }
 
 
@@ -1328,12 +1342,12 @@ input ::placeholder-shown {
     }
 
 /*header*/
-.container-header {
+/*.container-header {
         /*max-width: 768px;
         padding: 16px 16px 0 16px;*/
         /*margin: 0 auto;*/
         /*gap: 120px;*/
-        /*align-items: center;*/}
+        /*align-items: center;}*/
 
 .menu-button {display: none;}
 /*.nav-header {gap: 120px;}*/
